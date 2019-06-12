@@ -7,6 +7,8 @@ for COMMAND in ${REQUIRED_COMMANDS}; do
 done
 
 echo "Installing dependencies"
-pip3 install -r requirements.txt
+sudo pip3 install -r requirements.txt
 
 echo "alias text-my-message=\"python3 $PWD/code/main.py\"" >> ~/.bashrc
+
+echo "Execute => source ~/.bashrc or restart your terminal"
